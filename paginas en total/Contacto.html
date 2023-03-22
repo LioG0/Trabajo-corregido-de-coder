@@ -5,90 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../fotos del equipo/icono de pagina.png">
-    <link rel="stylesheet" href="../css/estilo.Css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/ESTILO.css">
+
     <title>Ziroc | Contacto</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-            <img src="../fotos del equipo/Logo blanco.png" alt="Logo del equipo fotografico">
-            </div>
-            <ul class="menu">
-             <li><a href="index.html">Inicio</a></li>
-             <li><a href="./Paginas relacionadas/Nuestro Trabajo.html">Nuestro Trabajo</a></li>
-             <li><a href="./Paginas relacionadas/Fotografos.html">Fotografos</a>
-             </li>
-             <li><a href="./Paginas relacionadas/Contacto.html">Contacto</a></li>
-             </ul>
-             <div class="buscador">
-                <input type="text" placeholder="buscador" required> 
-             </div>
-        </nav>
-    </header>
-    <main class="pagina3">
-        <section>
-            <form action="">
-                <div class="primerafila">
-                    <label for="name">Nombre</label>
-                    <input type="text" name="name" placeholder="Escribe tu nombre">
-                    <label for="surname">Apellido</label>
-                    <input type="text" name="surname" placeholder="Escribe tu apellido">
-                </div>
-                <br>
-                <div class="segundafila">
-                    <label for="gmail*">Email*</label>
-                    <input type="email" required name="gmail" placeholder="Ingresa tu gmail">
-                    <label for="dirección">Dirección</label>
-                    <input type="text" name="dirección" placeholder="Ingresa tu dirección">
-                </div>
-                <br>
-                <div class="tercerafila">
-                    <label for="Teléfono">Teléfono*</label>
-                    <input type="text" required name="Teléfono" placeholder="Ingresa tu numero de telefono">
-                </div>
-                <br>
-                <div>
-                    <label for="asunto">Asunto</label>
-                    <br>
-                    <input type="text" name="asunto" placeholder="Escribe el asunto">
-                </div>
-                <br>
-                <div>
-                    <textarea name="Asunto" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <input class="enviar" type="submit" value="Enviar">
-                </div>
-                <br>
-                <br>
-
-                <div class="redes">
-                    <a href="https://www.instagram.com/ziroc_ph/">
-                        <img class="icono1" src="../fotos del equipo/icono de insta 4.jpg" alt="icono de red social">
-                    </a>
-                    <a href="https://www.facebook.com/people/Ziroc-Ph/100084742205885/">
-                        <img class="icono12" src="../fotos del equipo/icono de face 4.jpg" alt="icono de red social">
-                    </a>
-                </div>
-
-
-        
-               </form>
-        </section>
-        <section class="imagen">
-            <div class="imagen1">
-                <img class="ENZO2" src="../fotos del equipo/ENZO1.jpg" alt="foto de nuestro trabajo">
-            </div>
-        </section>
-        
-      
-       
-    </main>
-    <footer>
+<body class="contenedor2">
+    <header class="header2">
+        <img src="../fotos del equipo/Logo blanco.png" alt="logo del equipo de fotografia">
+    <div class="buscador">
+        <nav class="brl">
+            <svg xmlns="" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </nav>
+        <input class="buscadormenu" type="text" placeholder="Buscar" required>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="./Inicio.html">Inicio</a></li>
+            <li><a href="./Nuestro trabajo.html">Nuestro Trabajo</a></li>
+            <li><a href="./Fotografos.html">Fotografos</a></li>
+            <li><a href="./Contacto.html">Conctacto</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="formulario">
+    <form class="formulario1" action="">
+        <div class="primerafila">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" placeholder="Escribe tu nombre">
+            <label for="surname">Apellido</label>
+            <input type="text" name="surname" placeholder="Escribe tu apellido">
+        </div>
+        <br>
+        <div class="segundafila">
+            <label for="gmail*">Email*</label>
+            <input type="email" required name="gmail" placeholder="Ingresa tu gmail">
+            <label for="dirección">Dirección</label>
+            <input type="text" name="dirección" placeholder="Ingresa tu dirección">
+        </div>
+        <br>
+        <div class="tercerafila">
+            <label for="Teléfono">Teléfono*</label>
+            <input type="text" required name="Teléfono" placeholder="Ingresa tu numero de telefono">
+        </div>
+        <br>
+        <div>
+            <label for="asunto">Asunto</label>
+            <br>
+            <input type="text" name="asunto" placeholder="Escribe el asunto">
+        </div>
+        <br>
+        <div>
+            <textarea name="Asunto" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input class="enviar" type="submit" value="Enviar">
+        </div>
+    </form>
+</section>
+<section class="imagendecontacto">
+    <img class="ENZO2" src="../fotos del equipo/ENZO1.jpg" alt="foto de nuestro trabajo">
+</section>
+<section class="iconosderedes"></section>
+    <footer class="footer2">
         <h4>©2023 por Ziroc Fotografia. Creado por Gonzalo L Salinas </h4>
-
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     
 </body>
 </html>
