@@ -1,403 +1,402 @@
-*{margin: 0;
-     padding: 0;
-     box-sizing: border-box;}
-   .contenedor{background-color: rgb(51,44,44);
-        width: 100%;
-        height: 100vb;
-        display: grid;
-        grid-template-columns: 1fr 1f;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 5px;
-        grid-template-areas: "header header"
-                             "imagen texto"
-                           "imagenes imagenes"
-                              "footer footer";}
-   .header{background-color: black;
-           height: 9vb;
-           grid-area: header;
-           display: flex;
-           justify-content:space-between;
-           align-items: center;}
-           img{ width: 390px;
-               height: 215px;
-               position: relative;
-               right: 30px;
-               } 
-           .buscador{padding: 5px;
-                     position: absolute;
-                     left:650px;}     
-           .buscadormenu{background-color: silver;
-                   width: 0px;
-                 height: 40px;
-                 font-size: 16px;
-                 color: #000;
-                 outline: none;
-                 border: 1px solid silver;
-                 border-radius: 30px;
-                 transition: all 0.6s ease;}
-           .brl{position: absolute;
-               top:0;
-               right:0px;
-               background-color: white;
-               width: 55px;
-               height: 55px;
-               line-height:55px;
-               text-align: center;
-               color: #000;
-               font-size: 20px;
-               border-radius:50%;
-               cursor: pointer;}      
-           .buscadormenu:hover{ width: 240px;}                     
-             
-   
-                
-   ul{color: aliceblue;
-       list-style: none;
-      display: flex;
-      justify-content: flex-end;}
-      li{text-decoration: none;
-         padding: 50px;
-         font-size: 19px ;}
-         a{text-decoration: none;
-           color: white;}
-          a:hover{color: silver;
-                  font-size: 25px;
-                  transition: .3s ease;}                
-   .imagen{grid-area: imagen;
-           width:1030px;
-           height: 71.5vb;
-           position: relative;
-           bottom: 5px;}
-   .Fotodeinicio{width: 1055px;
-                 height: 700px;
-                 border-radius:25px;}
-   .texto{color: white;
-          grid-area: texto ;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-          right: 30px;}
-          h1{font-size: 70px;}
-   .cajadetexto{ width: 650px;}       
-   .textodeinicio{font-size: 25px;
-           padding: 0.5rem;}
-   .imagenes{grid-area: imagenes;
-           display: flex;
-           align-items: center ;
-           justify-content: center;
-           margin: 120px;}               
-   .kitdeimagenes{display: flex;
-                  width: 1450px;
-                  height: 430px;
-                  }
-   .galeriadefotos{ width: 0px;
-                    flex-grow: 1;
-                    object-fit: cover;
-                    opacity: .7;
-                    transition: .5s ease;}
-   .galeriadefotos:hover{ cursor: crosshair;
-                           width: 500px;
-                           height: 470px;
-                            opacity: 1;
-                            filter: contrast(120%);}                                
-   
-   .footer{background-color: black;
-           grid-area: footer;
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           height: 100px;
-           }
-   h4{color:white;} 
-   
-   .contenedor1{background-color: rgb(51,44,44);
-           font-family: Arial, Helvetica, sans-serif;
-           width: 100%;
-           height: 100vb;
-           display: grid;
-           grid-template-columns: 1fr;
-           grid-template-rows: 1fr 1fr 4fr 1fr 1fr ;
-           gap:0;
-           grid-template-areas: "header1"
-                                "textodesegundapagina"
-                                "fotografos"
-                                "nombres"
-                                "publicidad"
-                                "footer1"   ;}
-   .header1{grid-area: header1;
-           background-color: #000;
-           height: 9vb ;
-           display: flex;
-           justify-content:space-between;
-           align-items: center;}
-   .textodesegundapagina{grid-area: textodesegundapagina;
-                         display: flex;
-                         align-items: center;}
-   .titulo2{color: white;
-            font-size: 30px;
-             padding: 20px;}                      
-   .fotografos{grid-area:fotografos;
-               display: flex;
-               justify-content: stretch;
-               align-items: center;
-               margin:0 auto;
-               padding: 20px;}
-   .I{width: 550px;
-      height: 800px;
-      }
-   .reb{width:500px;
-        height: 800px;    
-        overflow: hidden ;
-        object-fit: cover;
-        transition: .5s ease;
-        margin: 30px;
-        opacity: .6;
-        border-radius:20px}
-   .reb:hover{transform: scale(1.1);
-           opacity: 1;
-           box-shadow: 13px 15px 37px black ;
-           border-radius: 20px ;}                  
-   .nombres{grid-area: nombres;
-               color: white;
-               display: flex;
-               justify-content: space-around;
-               align-items: center;
-               font-size: 25px;
-               padding: 20px;
-           }
-               .q{position: relative;
-                  left: 60px;
-                  bottom: 20px}
-               .w{position: relative;
-                  left: 50px;
-                  bottom: 20px}
-               .e{position: relative;
-                  bottom: 20px;}
-   .publicidad{grid-area: publicidad;
-               color: white;
-               font-size: 30px;
-               padding: 50px;}                        
-   .footer1{grid-area: footer1;
-           background-color: #000;
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           height: 100px;}
-   .contenedor2{background-color: rgb(51,44,44);
-           font-family: Arial, Helvetica, sans-serif;
-           width: 100%;
-           height: 100vb;
-           display: grid;
-           grid-template-columns: 1fr 1fr;
-           grid-template-rows: 1fr 7fr 1fr 1fr;
-           gap:20px;
-           grid-template-areas:"header2 header2"
-                               "formulario imagendecontacto"
-                               "iconosderedes iconosderedes"
-                               "footer2 footer2"   ;}
-   .header2{background-color: black;
-           height: 9vb;
-           grid-area: header2;
-           display: flex;
-           justify-content:space-between;
-           align-items: center;}
-   .formulario{grid-area: formulario;
-               display: flex;
-               justify-content: center;}
-   .formulario1{width: 900px;
-           height: 850px;
-           background-color: rgb(58, 51, 51);
-           padding: 20px;
-           color: white;
-           border-radius: 30px;
-           font-size: 18px;
-           text-align: start;
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-   }
-           input, textarea{ outline: none;
-                   border: solid 1px #ccc;
-                   padding: 17px;
-                   width: 330px; 
-                   padding: 15px auto;
-                   margin: 3px auto;        } 
-   input:hover{border-color: green;}
-   input.enviar{background-color: rgb(58, 58, 66);
-               border:solid 3px;
-               border-radius: 4px;
-               border-color:rgb(58, 58, 66);
-               font-size: 15px;
-               color: white;}
-   .imagendecontacto{grid-area: imagendecontacto;
-   width: 870px;
-   position: relative;
-   left: 25px;}
-   .ENZO2{
-           width: 900px;
-          height: 900px;
-          border-radius: 20px;}
-   .iconosderedes{grid-area: iconosderedes;
-   background-color: brown;}
-   .footer2{background-color: black;
-           grid-area: footer2;
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           height: 100px;} 
-   @media screen and (max-width: 600px){
-           .contenedor{
-                   grid-template-columns: 1fr;
-                   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-                   gap: 100px;
-                   grid-template-areas: "header"
-                                         "texto"
-                                        "imagen"
-                                      "imagenes"
-                                       "footer";
-                                   }
-                                   .header{background-color: black;
-                                           height: 9vb;
-                                           grid-area: header;
-                                           display: flex;
-                                           flex-direction: column;
-                                           justify-content:space-between;
-                                           align-items: center;}                       
-           .imagen{grid-area: imagen;
-                   width:1030px;
-                   height: 71.5vb;
-                   position: relative;
-                   bottom: 5px;
-                   left: 400px
-                   ;}
-   
-           .imagenes{grid-area: imagenes;
-                           display: flex;
-                           align-items: center ;
-                           justify-content: center;
-                           margin: 120px;
-                           padding: 80px;}
-   
-           .footer{background-color: black;
-                   grid-area: footer;
-                   display: flex;
-                   justify-content: center;
-                   align-items: center;
-                   height: 100px;
-                   position: relative;
-                   top: 215px; }
-   .contenedor1{
-   display: grid;
-   grid-template-columns: 10fr;
-   grid-template-rows: 1fr 1fr 4fr 1fr 1fr ;
-   gap:0;
-   grid-template-areas: "header1"
-                   "textodesegundapagina"
-                   "fotografos"
-                   "nombres"
-                   "publicidad"
-                   "footer1"   ;}
-                   .header1{grid-area: header1;
-                           background-color: #000;
-                           height: 9vb ;
-                           display: flex;
-                           justify-content:space-between;
-                           align-items: center;}
-                                
-                   .fotografos{grid-area:fotografos;
-                           display: flex;
-                           flex-direction: column;
-                           justify-content: stretch;
-                           align-items: center;
-                           margin:0 auto;
-                           padding: 20px;}
-           .nombres{grid-area: nombres;
-               color: rgb(51,44,44);
-               display: flex;
-               justify-content: space-around;
-               align-items: center;
-               font-size: 25px;
-               padding: 20px;}
-   
-               .publicidad{grid-area: publicidad;
-                   color: white;
-                   width: 600px;
-                   font-size: 30px;
-                   padding: 50px;
-                   position: relative;
-                   left: 250px;}
-                   .textodesegundapagina{grid-area: textodesegundapagina;
-                           width: 600px;
-                           display: flex;
-                           align-items: center;
-                           position: relative;
-                           left: 250px;}
-                           .footer1{grid-area: footer1;
-                                   background-color: #000;
-                                   display: flex;
-                                   justify-content: center;
-                                   align-items: center;
-                                   text-align: center;
-                                   height: 100px;}
-   
-                                   .contenedor2{background-color: rgb(51,44,44);
-                                           font-family: Arial, Helvetica, sans-serif;
-                                           width: 100%;
-                                           height: 100vb;
-                                           display: grid;
-                                           grid-template-columns: 1fr;
-                                           grid-template-rows: 1fr 1fr 1fr;
-                                           gap:20px;
-                                           grid-template-areas:"header2"
-                                                               "formulario"
-                                                               "footer2"   ;} 
-                                                               .formulario{grid-area: formulario;
-                                                                   display: flex;
-                                                                   flex-direction: column;
-                                                                   justify-content: start;}
-                                                                   .formulario1{width: 600px;
-                                                                           height: 1100px;
-                                                                           background-color: rgb(58, 51, 51);
-                                                                           padding: 20px;
-                                                                           color: white;
-                                                                           border-radius: 30px;
-                                                                           font-size: 18px;
-                                                                           text-align: start;
-                                                                           display: flex;
-                                                                           flex-direction: column;
-                                                                           ;}
-                                                                           input, textarea{ outline: none;
-                                                                                   border: solid 1px #ccc;
-                                                                                   padding: 17px;
-                                                                                   width: 330px; 
-                                                                                   padding: 15px auto;
-                                                                                   margin: 3px auto;
-                                                                           display: flex;
-                                                                           flex-direction: column;}
-                                                                           .footer2{background-color: black;
-                                                                                   width: 600px;
-                                                                                   height: 1200px;
-                                                                                   grid-area: footer2;
-                                                                                   display: flex;
-                                                                                   justify-content: center;
-                                                                                   align-items: center;
-                                                                                   height: 100px;}
-                                                                                }                   
-                               
-                        
-                                          
-                                     
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
+.contenedor {
+  background-color: #332c2c;
+  width: 100%;
+  height: 100vb;
+  display: grid;
+  grid-template-columns: 1fr 1f;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  grid-template-areas: "header header" "imagen texto" "imagenes imagenes" "footer footer"; }
 
-    
-                                  
-                    
-                
+.header {
+  background-color: #000000;
+  height: 9vb;
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header img {
+    width: 390px;
+    height: 215px;
+    position: relative;
+    right: 30px; }
+  .header .buscador {
+    padding: 5px;
+    position: absolute;
+    left: 650px; }
+    .header .buscador .buscadormenu {
+      background-color: #c0c0c0;
+      width: 0px;
+      height: 40px;
+      font-size: 16px;
+      color: #000000;
+      outline: none;
+      border: 1px solid #c0c0c0;
+      border-radius: 30px;
+      transition: all 0.6s ease; }
+    .header .buscador .brl {
+      position: absolute;
+      top: 0;
+      right: 0px;
+      background-color: white;
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+      text-align: center;
+      color: #000;
+      font-size: 20px;
+      border-radius: 50%;
+      cursor: pointer; }
+    .header .buscador .buscadormenu:hover {
+      width: 240px; }
+  .header ul {
+    color: #f0f8ff;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; }
+    .header ul li {
+      text-decoration: none;
+      padding: 50px;
+      font-size: 19px; }
+    .header ul a {
+      text-decoration: none;
+      color: white; }
+    .header ul a:hover {
+      color: silver;
+      font-size: 25px;
+      transition: .3s ease; }
 
-        
-                                         
+.imagen {
+  grid-area: imagen;
+  width: 1030px;
+  height: 71.5vb;
+  position: relative;
+  bottom: 5px; }
+  .imagen .Fotodeinicio {
+    width: 1055px;
+    height: 700px;
+    border-radius: 25px; }
 
-                         
-     
+.texto {
+  color: white;
+  grid-area: texto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 30px; }
+  .texto h1 {
+    font-size: 70px; }
+  .texto .cajadetexto {
+    width: 650px; }
+    .texto .cajadetexto .textodeinicio {
+      font-size: 25px;
+      padding: 0.5rem; }
+
+.imagenes {
+  grid-area: imagenes;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 120px; }
+  .imagenes .kitdeimagenes {
+    display: flex;
+    width: 1450px;
+    height: 430px; }
+    .imagenes .kitdeimagenes .galeriadefotos {
+      width: 0px;
+      flex-grow: 1;
+      object-fit: cover;
+      opacity: .7;
+      transition: .5s ease; }
+    .imagenes .kitdeimagenes .galeriadefotos:hover {
+      cursor: crosshair;
+      width: 500px;
+      height: 470px;
+      opacity: 1;
+      filter: contrast(120%); }
+
+.footer {
+  background-color: black;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; }
+  .footer h4 {
+    color: white; }
+
+.contenedor1 {
+  background-color: #332c2c;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vb;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 4fr 1fr 1fr;
+  gap: 0;
+  grid-template-areas: "header1" "textodesegundapagina" "fotografos" "nombres" "publicidad" "footer1"; }
+
+.header1 {
+  background-color: #000000;
+  height: 9vb;
+  grid-area: header1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header1 img {
+    width: 390px;
+    height: 215px;
+    position: relative;
+    right: 30px; }
+  .header1 .buscador {
+    padding: 5px;
+    position: absolute;
+    left: 650px; }
+    .header1 .buscador .buscadormenu {
+      background-color: #c0c0c0;
+      width: 0px;
+      height: 40px;
+      font-size: 16px;
+      color: #000000;
+      outline: none;
+      border: 1px solid #c0c0c0;
+      border-radius: 30px;
+      transition: all 0.6s ease; }
+    .header1 .buscador .brl {
+      position: absolute;
+      top: 0;
+      right: 0px;
+      background-color: white;
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+      text-align: center;
+      color: #000;
+      font-size: 20px;
+      border-radius: 50%;
+      cursor: pointer; }
+    .header1 .buscador .buscadormenu:hover {
+      width: 240px; }
+  .header1 ul {
+    color: #f0f8ff;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; }
+    .header1 ul li {
+      text-decoration: none;
+      padding: 50px;
+      font-size: 19px; }
+    .header1 ul a {
+      text-decoration: none;
+      color: white; }
+    .header1 ul a:hover {
+      color: silver;
+      font-size: 25px;
+      transition: .3s ease; }
+
+.textodesegundapagina {
+  grid-area: textodesegundapagina;
+  display: flex;
+  align-items: center; }
+  .textodesegundapagina .titulo2 {
+    color: #ffffff;
+    font-size: 30px;
+    padding: 20px; }
+
+.fotografos {
+  grid-area: fotografos;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px; }
+  .fotografos .reb {
+    width: 500px;
+    height: 800px;
+    overflow: hidden;
+    object-fit: cover;
+    transition: .5s ease;
+    margin: 30px;
+    opacity: .6;
+    border-radius: 20px; }
+    .fotografos .reb .I {
+      width: 550px;
+      height: 800px; }
+
+.reb:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  box-shadow: 13px 15px 37px black;
+  border-radius: 20px; }
+
+.nombres {
+  grid-area: nombres;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+  padding: 20px; }
+  .nombres .q {
+    position: relative;
+    left: 60px;
+    bottom: 20px; }
+  .nombres .w {
+    position: relative;
+    left: 50px;
+    bottom: 20px; }
+  .nombres .e {
+    position: relative;
+    bottom: 20px; }
+
+.publicidad {
+  grid-area: publicidad;
+  color: white;
+  font-size: 30px;
+  padding: 50px; }
+
+.footer1 {
+  grid-area: footer1;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; }
+  .footer1 h4 {
+    color: white; }
+
+.contenedor2 {
+  background-color: #332c2c;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vb;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 7fr 1fr 1fr;
+  gap: 20px;
+  grid-template-areas: "header2 header2" "formulario imagendecontacto" "iconosderedes iconosderedes" "footer2 footer2"; }
+
+.header2 {
+  background-color: #000000;
+  height: 9vb;
+  grid-area: header2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header2 img {
+    width: 390px;
+    height: 215px;
+    position: relative;
+    right: 30px; }
+  .header2 .buscador {
+    padding: 5px;
+    position: absolute;
+    left: 650px; }
+    .header2 .buscador .buscadormenu {
+      background-color: #c0c0c0;
+      width: 0px;
+      height: 40px;
+      font-size: 16px;
+      color: #000000;
+      outline: none;
+      border: 1px solid #c0c0c0;
+      border-radius: 30px;
+      transition: all 0.6s ease; }
+    .header2 .buscador .brl {
+      position: absolute;
+      top: 0;
+      right: 0px;
+      background-color: white;
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+      text-align: center;
+      color: #000;
+      font-size: 20px;
+      border-radius: 50%;
+      cursor: pointer; }
+    .header2 .buscador .buscadormenu:hover {
+      width: 240px; }
+  .header2 ul {
+    color: #f0f8ff;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; }
+    .header2 ul li {
+      text-decoration: none;
+      padding: 50px;
+      font-size: 19px; }
+    .header2 ul a {
+      text-decoration: none;
+      color: white; }
+    .header2 ul a:hover {
+      color: silver;
+      font-size: 25px;
+      transition: .3s ease; }
+
+.formulario {
+  grid-area: formulario;
+  display: flex;
+  justify-content: center; }
+  .formulario .formulario1 {
+    width: 900px;
+    height: 850px;
+    background-color: #3a3333;
+    padding: 20px;
+    color: white;
+    border-radius: 30px;
+    font-size: 18px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+input, textarea {
+  outline: none;
+  border: solid 1px #ccc;
+  padding: 17px;
+  width: 330px;
+  padding: 15px auto;
+  margin: 3px auto; }
+
+input:hover {
+  border-color: green; }
+
+input.enviar {
+  background-color: #3a3a42;
+  border: solid 3px;
+  border-radius: 4px;
+  border-color: #3a3a42;
+  font-size: 15px;
+  color: white; }
+
+.imagendecontacto {
+  grid-area: imagendecontacto;
+  width: 870px;
+  position: relative;
+  left: 25px; }
+  .imagendecontacto .ENZO2 {
+    width: 900px;
+    height: 900px;
+    border-radius: 20px; }
+
+.iconosderedes {
+  grid-area: iconosderedes;
+  background-color: brown; }
+
+.footer2 {
+  background-color: black;
+  grid-area: footer2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; }
+  .footer2 h4 {
+    color: white; }

@@ -1,0 +1,51 @@
+.textodesegundapagina{grid-area: textodesegundapagina;
+    display: flex;
+    align-items: center;
+    .titulo2{color: #ffffff;
+        font-size: 30px;
+         padding: 20px;}}
+    
+    .fotografos{grid-area:fotografos;
+            display: flex;
+            justify-content: stretch;
+            align-items: center;
+            margin:0 auto;
+            padding: 20px;
+            .reb{width:500px;
+                height: 800px;    
+                overflow: hidden ;
+                object-fit: cover;
+                transition: .5s ease;
+                margin: 30px;
+                opacity: .6;
+                border-radius:20px;
+                .I{width: 550px;
+                    height: 800px;
+                    }
+                }}
+                .reb:hover{transform: scale(1.1);
+                    opacity: 1;
+                    box-shadow: 13px 15px 37px black ;
+                    border-radius: 20px ;} 
+    
+    .nombres{grid-area: nombres;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 25px;
+            padding: 20px;
+            .q{position: relative;
+                left: 60px;
+                bottom: 20px}
+             .w{position: relative;
+                left: 50px;
+                bottom: 20px}
+             .e{position: relative;
+                bottom: 20px;}
+                    }
+    
+    .publicidad{grid-area: publicidad;
+                color: white;
+                font-size: 30px;
+                padding: 50px;}

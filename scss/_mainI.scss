@@ -1,0 +1,44 @@
+.imagen{grid-area: imagen;
+    width:1030px;
+    height: 71.5vb;
+    position: relative;
+    bottom:5px;
+    .Fotodeinicio{width: 1055px;
+        height: 700px;
+        border-radius:25px;}
+    }
+
+.texto{color: white;
+    grid-area: texto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 30px;
+    h1{font-size: 70px;}
+    .cajadetexto{ width: 650px;
+                .textodeinicio{font-size: 25px;
+                               padding: 0.5rem;}}
+    }
+
+.imagenes{grid-area: imagenes;
+        display: flex;
+        align-items: center ;
+        justify-content: center;
+        margin: 120px;
+        .kitdeimagenes{display: flex;
+            width: 1450px;
+            height: 430px;
+            .galeriadefotos{ width: 0px;
+                flex-grow: 1;
+                object-fit: cover;
+                opacity: .7;
+                transition: .5s ease;
+            }
+            .galeriadefotos:hover{ cursor: crosshair;
+                width: 500px;
+                height: 470px;
+                 opacity: 1;
+                 filter: contrast(120%);}}
+    }
