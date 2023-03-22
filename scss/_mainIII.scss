@@ -37,5 +37,11 @@ input, textarea{ outline: none;
                    border-radius: 20px;}}
               
 .iconosderedes{grid-area: iconosderedes;
-              background-color: brown;
-              }        
+              width: 200px;
+              height: 100px;
+              padding: 30px;
+              margin: 10px;
+              .icono{width: 50px;
+                     color: black;
+                    padding: 2px;}
+}       
