@@ -11,7 +11,10 @@
   grid-template-columns: 1fr 1f;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 5px;
-  grid-template-areas: "header header" "imagen texto" "imagenes imagenes" "footer footer"; }
+  grid-template-areas: "header header"
+ "imagen texto"
+ "imagenes imagenes"
+ "footer footer"; }
 
 .header {
   background-color: #000000;
@@ -141,7 +144,12 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 4fr 1fr 1fr;
   gap: 0;
-  grid-template-areas: "header1" "textodesegundapagina" "fotografos" "nombres" "publicidad" "footer1"; }
+  grid-template-areas: "header1"
+ "textodesegundapagina"
+ "fotografos"
+ "nombres"
+ "publicidad"
+ "footer1"; }
 
 .header1 {
   background-color: #000000;
@@ -281,7 +289,10 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 7fr 1fr 1fr;
   gap: 20px;
-  grid-template-areas: "header2 header2" "formulario imagendecontacto" "iconosderedes iconosderedes" "footer2 footer2"; }
+  grid-template-areas: "header2 header2"
+ "formulario imagendecontacto"
+ "iconosderedes iconosderedes"
+ "footer2 footer2"; }
 
 .header2 {
   background-color: #000000;
